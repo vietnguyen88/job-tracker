@@ -25,123 +25,161 @@ interface Data {
   created_by: string;
 }
 
-function createData(
-  project_name: string,
-  project_id: string,
-  start_date: Date,
-  end_date: Date,
-  created_by: string
-): Data {
-  return { project_name, project_id, start_date, end_date, created_by };
-}
+// function createData(
+//   project_name: string,
+//   project_id: string,
+//   start_date: Date,
+//   end_date: Date,
+//   created_by: string
+// ): Data {
+//   return { project_name, project_id, start_date, end_date, created_by };
+// }
 
 const rows = [
-  createData(
-    "Barangaroo",
-    "HC7199",
-    new Date("2023-01-11"),
-    new Date("2023-02-11"),
-    "Andy"
-  ),
-  createData(
-    "Pitt St",
-    "HC7196",
-    new Date("2023-06-11"),
-    new Date("2023-08-11"),
-    "Adam"
-  ),
-  createData(
-    "Sydney CBD",
-    "HC7192",
-    new Date("2023-08-11"),
-    new Date("2023-10-11"),
-    "Ivan"
-  ),
-  createData(
-    "Barangaroo II",
-    "HC7191",
-    new Date("2023-05-11"),
-    new Date("2023-09-11"),
-    "Andy"
-  ),
-  createData(
-    "Wollongong1",
-    "HC2326",
-    new Date("2023-03-11"),
-    new Date("2023-06-11"),
-    "Andy"
-  ),
-  createData(
-    "Wollongong2",
-    "HC8565",
-    new Date("2023-03-11"),
-    new Date("2023-06-11"),
-    "Andy"
-  ),
-  createData(
-    "Wollongong3",
-    "HC6853",
-    new Date("2023-03-11"),
-    new Date("2023-06-11"),
-    "Andy"
-  ),
-  createData(
-    "Wollongong5",
-    "HC8563",
-    new Date("2023-03-11"),
-    new Date("2023-06-11"),
-    "Andy"
-  ),
-  createData(
-    "Wollongong4",
-    "HC6792",
-    new Date("2023-03-11"),
-    new Date("2023-06-11"),
-    "Andy"
-  ),
-  createData(
-    "Wollongong",
-    "HC5346",
-    new Date("2023-03-11"),
-    new Date("2023-06-11"),
-    "Andy"
-  ),
-  createData(
-    "Wollongong",
-    "HC1755",
-    new Date("2023-03-11"),
-    new Date("2023-06-11"),
-    "Andy"
-  ),
-  createData(
-    "Wollongong",
-    "HC8446",
-    new Date("2023-03-11"),
-    new Date("2023-06-11"),
-    "Andy"
-  ),
-  createData(
-    "Wollongong",
-    "HC1245",
-    new Date("2023-03-11"),
-    new Date("2023-06-11"),
-    "Andy"
-  ),
-  createData(
-    "Wollongong",
-    "HC1342",
-    new Date("2023-03-11"),
-    new Date("2023-06-11"),
-    "Andy"
-  ),
-  createData(
-    "Wollongong",
-    "HC6585",
-    new Date("2023-03-11"),
-    new Date("2023-06-11"),
-    "Andy"
-  ),
-];
+  {
+    project_name: 'Barangaroo',
+    project_id: 'HC7120',
+    start_date: new Date("2023-01-11"),
+    end_date: new Date("2023-02-11"),
+    created_by: 'Adam'
+  },
+  {
+    project_name: 'Barangaroo',
+    project_id: 'HC7121',
+    start_date: new Date("2023-01-11"),
+    end_date: new Date("2023-02-11"),
+    created_by: 'Adam'
+  },
+  {
+    project_name: 'Barangaroo',
+    project_id: 'HC7122',
+    start_date: new Date("2023-01-11"),
+    end_date: new Date("2023-02-11"),
+    created_by: 'Adam'
+  },
+  {
+    project_name: 'Barangaroo',
+    project_id: 'HC7123',
+    start_date: new Date("2023-01-11"),
+    end_date: new Date("2023-02-11"),
+    created_by: 'Adam'
+  },
+  {
+    project_name: 'Barangaroo',
+    project_id: 'HC7124',
+    start_date: new Date("2023-01-11"),
+    end_date: new Date("2023-02-11"),
+    created_by: 'Adam'
+  },
+]
+
+// const rows = [
+//   createData(
+//     "Barangaroo",
+//     "HC7199",
+//     new Date("2023-01-11"),
+//     new Date("2023-02-11"),
+//     "Andy"
+//   ),
+//   createData(
+//     "Pitt St",
+//     "HC7196",
+//     new Date("2023-06-11"),
+//     new Date("2023-08-11"),
+//     "Adam"
+//   ),
+//   createData(
+//     "Sydney CBD",
+//     "HC7192",
+//     new Date("2023-08-11"),
+//     new Date("2023-10-11"),
+//     "Ivan"
+//   ),
+//   createData(
+//     "Barangaroo II",
+//     "HC7191",
+//     new Date("2023-05-11"),
+//     new Date("2023-09-11"),
+//     "Andy"
+//   ),
+//   createData(
+//     "Wollongong1",
+//     "HC2326",
+//     new Date("2023-03-11"),
+//     new Date("2023-06-11"),
+//     "Andy"
+//   ),
+//   createData(
+//     "Wollongong2",
+//     "HC8565",
+//     new Date("2023-03-11"),
+//     new Date("2023-06-11"),
+//     "Andy"
+//   ),
+//   createData(
+//     "Wollongong3",
+//     "HC6853",
+//     new Date("2023-03-11"),
+//     new Date("2023-06-11"),
+//     "Andy"
+//   ),
+//   createData(
+//     "Wollongong5",
+//     "HC8563",
+//     new Date("2023-03-11"),
+//     new Date("2023-06-11"),
+//     "Andy"
+//   ),
+//   createData(
+//     "Wollongong4",
+//     "HC6792",
+//     new Date("2023-03-11"),
+//     new Date("2023-06-11"),
+//     "Andy"
+//   ),
+//   createData(
+//     "Wollongong",
+//     "HC5346",
+//     new Date("2023-03-11"),
+//     new Date("2023-06-11"),
+//     "Andy"
+//   ),
+//   createData(
+//     "Wollongong",
+//     "HC1755",
+//     new Date("2023-03-11"),
+//     new Date("2023-06-11"),
+//     "Andy"
+//   ),
+//   createData(
+//     "Wollongong",
+//     "HC8446",
+//     new Date("2023-03-11"),
+//     new Date("2023-06-11"),
+//     "Andy"
+//   ),
+//   createData(
+//     "Wollongong",
+//     "HC1245",
+//     new Date("2023-03-11"),
+//     new Date("2023-06-11"),
+//     "Andy"
+//   ),
+//   createData(
+//     "Wollongong",
+//     "HC1342",
+//     new Date("2023-03-11"),
+//     new Date("2023-06-11"),
+//     "Andy"
+//   ),
+//   createData(
+//     "Wollongong",
+//     "HC6585",
+//     new Date("2023-03-11"),
+//     new Date("2023-06-11"),
+//     "Andy"
+//   ),
+// ];
 
 const index = () => {
   const [isEditSelected, setIsEditSelected] = useState(true);

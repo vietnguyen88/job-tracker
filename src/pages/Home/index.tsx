@@ -19,7 +19,7 @@ const Home = () => {
     <Container maxWidth="lg">
       <Box sx={{ width: "100%", typography: "body1" }}>
         <TabContext value={value}>
-          <Box sx={{ borderColor: "divider", borderBottom: 1 }}>
+          <Box sx={{  }}>
             <TabList onChange={handleOnChange}>
               <Tab label="Head-Contract" value="1" />
               <Tab label="Sub-Contract" value="2" />

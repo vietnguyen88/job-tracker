@@ -1,7 +1,7 @@
 import React from "react";
 
 import FormControl from "@mui/material/FormControl";
-import InputLabel from "@mui/material/InputLabel";
+// import InputLabel from "@mui/material/InputLabel";
 
 import TextField from "@mui/material/TextField";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
@@ -11,10 +11,14 @@ import dayjs, { Dayjs } from "dayjs";
 import { Stack } from "@mui/system";
 import { Button, FilledInput, InputAdornment } from "@mui/material";
 import "dayjs/locale/en-au";
-import AbcIcon from "@mui/icons-material/Abc";
+// import AbcIcon from "@mui/icons-material/Abc";
 
 const Create = () => {
-  const [value, setValue] = React.useState<Dayjs | null>(null);
+  const [startDate, setStartDate] = React.useState<Dayjs | null>(null);
+  const [endDate, setEndDate] = React.useState<Dayjs | null>(null);
+
+
+
   return (
     <div>
       <FormControl>
@@ -42,9 +46,9 @@ const Create = () => {
           >
             <DatePicker
               label="Start Date"
-              value={value}
+              value={startDate}
               onChange={(newValue) => {
-                setValue(newValue);
+                setStartDate(newValue);
               }}
               renderInput={(params) => <TextField {...params} />}
             />
@@ -55,9 +59,9 @@ const Create = () => {
           >
             <DatePicker
               label="End Date"
-              value={value}
+              value={endDate}
               onChange={(newValue) => {
-                setValue(newValue);
+                setEndDate(newValue);
               }}
               renderInput={(params) => <TextField {...params} />}
             />

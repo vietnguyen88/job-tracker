@@ -66,7 +66,7 @@ const ContractRow: FC<Props> = (props) => {
                 Address
               </Typography>
               <Stack direction="row">
-                <Typography sx={{ width: "20%" }}>Start:</Typography>
+                <Typography sx={{ width: "10%" }}>Start:</Typography>
                 <Typography>
                   {props.row.start_date.toLocaleString("en-au", {
                     year: "numeric",
@@ -76,7 +76,7 @@ const ContractRow: FC<Props> = (props) => {
                 </Typography>
               </Stack>
               <Stack direction="row">
-                <Typography sx={{ width: "20%" }}>End:</Typography>
+                <Typography sx={{ width: "10%" }}>End:</Typography>
                 <Typography>
                   {props.row.end_date.toLocaleString("en-au", {
                     year: "numeric",
@@ -86,7 +86,7 @@ const ContractRow: FC<Props> = (props) => {
                 </Typography>
               </Stack>
               <Stack direction="row">
-                <Typography sx={{ width: "20%" }}>Created By:</Typography>
+                <Typography sx={{ width: "10%" }}>Created By:</Typography>
                 <Typography>{props.row.created_by}</Typography>
               </Stack>
             </Box>
